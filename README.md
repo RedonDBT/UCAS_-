@@ -9,7 +9,7 @@
 - **控制依赖(Control dependences)**
 
     - 是指一条指令i同一条分支指令之间的相关性，这种相关性要求指令i只能在应当被执行的时候才被执行
-    ![alt text](image-7.png)
+    ![alt text](pics/image-7.png)
     - 
 ## 2.RISC处理器的五阶段流水线
 RISC（精简指令集计算机）处理器的五阶段流水线是经典的指令执行模型，旨在提高处理器性能。以下是五个阶段的详细描述：
@@ -181,10 +181,10 @@ RISC处理器的五阶段流水线设计广泛应用于**MIPS**、**ARM**等处�
 - Write Invalidate（写作废策略）
     - 在一个处理器写某个数据项之前保证它对该数据项有唯一的访问权
     - 当一个处理器更新某共享单元（如存储行或存储页）时（之前或之后），通过某种机制使该共享单元的其它备份作废无效；当其它处理器访问该共享单元时，访问失效，需要重新从主存中读取该单元的新值
-    - ![alt text](image-8.png)
+    - ![alt text](pics/image-8.png)
 - Write Update（写更新策略）
     - 当一个处理器更新某共享单元时，把更新的内容传播给所有拥有该共享单元备份的处理器
-    - ![alt text](image-9.png)
+    - ![alt text](pics/image-9.png)
 - 两种策略的区别
     - Write Invalidate通常用于减少数据传输的带宽，因为它只需要发送一个无效信号，而Write Update可能需要发送更多的数据
     - Write Update可以减少读操作的延迟，因为其他处理器可以更迅速地获取到最新的数据
@@ -385,7 +385,7 @@ TLB（Translation Lookaside Buffer）是一个小型的硬件缓存，用于存�
 ## 3.	向量处理器的典型应用场景
 
 ## 4.	SIMD的概念和GPU体系结构
-## ![alt text](image-10.png)
+## ![alt text](pics/image-10.png)
 
 # 超长指令字
 ## 1.	VLIW的定义
@@ -405,7 +405,7 @@ TLB（Translation Lookaside Buffer）是一个小型的硬件缓存，用于存�
 
 ## 3.	处理器中提高指令并行度的设计方法
 
-## ![alt text](image-11.png)
+## ![alt text](pics/image-11.png)
 # 片上网络
 ## 1.	片上网络的经典拓扑结构
 
@@ -420,9 +420,9 @@ TLB（Translation Lookaside Buffer）是一个小型的硬件缓存，用于存�
 
 # 硬件加速器
 ## 1.	什么是硬件加速器
-- ![alt text](image-16.png)
+- ![alt text](pics/image-16.png)
 ## 2.	硬件加速器的两大类设计实现的方向
-- ![alt text](image-17.png)
+- ![alt text](pics/image-17.png)
 # 计算机系统可以划分为哪些层次？各层次之间的界面是什么？你认为这样划分有什么好处？
 
 # 计算机系统可以划分为哪些层次？各层次之间的界面是什么？你认为这样划分有什么好处？
@@ -435,23 +435,23 @@ TLB（Translation Lookaside Buffer）是一个小型的硬件缓存，用于存�
 
 # 在片上网络系统中，请回答一些问题
 - 请列举片上网络系统中的典型拓扑结构，并说明该拓扑结构的优缺点
-  - ![alt text](7084c28723e91c8dcac5b27a58461e1.jpg)
+  - ![alt text](pics/7084c28723e91c8dcac5b27a58461e1.jpg)
 - 片上网络路由算法可分为哪几种类型？
   - 确定性路由算法
   - 流量无关路由算法
   - 自适应路由算法
 - 在自适应路由算法中，可采用哪几种方法避免网络死锁
-  - ![alt text](7f42306ec1bc8e11cb1ab6ae78deedb.jpg)
-  - ![alt text](bd4330961d945e43aca0adc3ec7e02a.jpg)
+  - ![alt text](pics/7f42306ec1bc8e11cb1ab6ae78deedb.jpg)
+  - ![alt text](pics/bd4330961d945e43aca0adc3ec7e02a.jpg)
   
 # 对于计算机虚拟化技术，回答以下问题
 - 简述Type 1和Type 2虚拟化技术的区别，可以画简图
-  - ![alt text](7c52f58f2a48856381d118bdf4abb55.jpg)
+  - ![alt text](pics/7c52f58f2a48856381d118bdf4abb55.jpg)
 - 简述虚拟机监控技术和容器技术的技术原理差异，可画简图
-  - ![alt text](cb00f646ae3f1ab7548ffb454e1c1d2.jpg)
+  - ![alt text](pics/cb00f646ae3f1ab7548ffb454e1c1d2.jpg)
 # 对于如下分布式文件存储系统，回答问题
-![alt text](image-12.png)![alt text](image-13.png)
+![alt text](pics/image-12.png)![alt text](pics/image-13.png)
 - chunk的位置是否需要持久化？
-  - ![alt text](image-14.png)
+  - ![alt text](pics/image-14.png)
 - 如果一个chunk的大小64MB，元数据64bit，每个文件独立存储三份，那么1PB数据对应的元数据大小是多少？
-  - ![alt text](image-15.png)
+  - ![alt text](pics/image-15.png)

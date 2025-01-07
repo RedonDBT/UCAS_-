@@ -42,7 +42,7 @@
      - 访问延迟：50~100ns
      - 带宽：数十GB/s
    - 易失性：断电后数据丢失
-![alt text](image.png)
+![alt text](pics/image.png)
 4. 辅助存储器
    - 硬盘(HDD)：
      - 机械结构，寻道时间长
@@ -75,7 +75,7 @@
             -> 如果CPI = 1,则每个指令周期需要m+1次访存操作
         
     - **能耗(Energy)** 单次存储器访问的能耗（nJ）
-![alt text](image-1.png)
+![alt text](pics/image-1.png)
 6. **多级存储的目的是通过合理组织和层次化存储系统，提高计算机系统的性能、效率和容量，以满足不同应用场景下的需求**
     - 策略（Strategy）：使用小容量、高速存储器作为Cache，来降低平均访存延迟
     - 缓存（Cache）是一种减少访存延迟的机制，它基于经验观察，即处理器进行的内存访问模式通常是高度可预测的
@@ -84,11 +84,11 @@
     - 以由地址连续的若干个字构成的块为单位，从低层复制到上一层
 - **时间局部性（ Temporal Locality ）：如果一个地址被访问过，在不久的将来很可能还会被访问**
     - 保持最近访问的数据项最接近微处理器
-    ![alt text](image-2.png)
+    ![alt text](pics/image-2.png)
 8. 一个经典计算题
 
 - **注意计算方式、TM、TA**
-![alt text](image-3.png)
+![alt text](pics/image-3.png)
 
 
 
@@ -109,7 +109,7 @@
     - **降低存储系统成本**
 
 ### 2.0.1 Cache工作流程
-![alt text](image-4.png)
+![alt text](pics/image-4.png)
 
 ### 2.1 基本组成
 - Cache行(Cache Line)：
@@ -188,8 +188,8 @@
         - 通常是一个数字，指示Cache行号
     - Data是存储在Cache中的实际数据
         - 从主存中复制到Cache的数据块
-        - ![alt text](image-5.png)
-        - ![alt text](image-6.png)
+        - ![alt text](pics/image-5.png)
+        - ![alt text](pics/image-6.png)
 
 ### 2.3 替换算法
 
