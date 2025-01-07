@@ -1,4 +1,4 @@
-# UCAS_-计算机体系架构复习
+# UCAS——计算机体系架构
 # 一、指令流水线
 ## 1.流水线中的指令依赖关系 
 - **数据依赖(Data dependences)**
@@ -433,18 +433,23 @@ TLB（Translation Lookaside Buffer）是一个小型的硬件缓存，用于存�
 
 # 在片上网络系统中，请回答一些问题
 - 请列举片上网络系统中的典型拓扑结构，并说明该拓扑结构的优缺点
+  - ![alt text](7084c28723e91c8dcac5b27a58461e1.jpg)
 - 片上网络路由算法可分为哪几种类型？
   - 确定性路由算法
   - 流量无关路由算法
   - 自适应路由算法
 - 在自适应路由算法中，可采用哪几种方法避免网络死锁
+  - ![alt text](7f42306ec1bc8e11cb1ab6ae78deedb.jpg)
+  - ![alt text](bd4330961d945e43aca0adc3ec7e02a.jpg)
   
 # 对于计算机虚拟化技术，回答以下问题
 - 简述Type 1和Type 2虚拟化技术的区别，可以画简图
+  - ![alt text](7c52f58f2a48856381d118bdf4abb55.jpg)
 - 简述虚拟机监控技术和容器技术的技术原理差异，可画简图
-
+  - ![alt text](cb00f646ae3f1ab7548ffb454e1c1d2.jpg)
 # 对于如下分布式文件存储系统，回答问题
 ![alt text](image-12.png)![alt text](image-13.png)
 - chunk的位置是否需要持久化？
+  - ![alt text](image-14.png)
 - 如果一个chunk的大小64MB，元数据64bit，每个文件独立存储三份，那么1PB数据对应的元数据大小是多少？
-  
+  - ![alt text](image-15.png)
